@@ -1,0 +1,42 @@
+.container_img-head {
+    width: 100%;
+    height: 260px;
+    background-color: #053f89;
+}
+
+.container_img-head img {
+    width: 100%;
+}
+
+.main .sub-title,
+.services .sub-title-service {
+    font-size: 15px;
+    font-weight: 100;
+    color: #cecece;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.main .sub-title_two {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bolder;
+}
+
+.services .sub-title-service-two {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bolder;
+}
+
+/* BOTON AGENDAR CITA */
+.schedule {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    background-color: #053f89;
+}

@@ -1,0 +1,59 @@
+.footer {
+    padding-top: 20px;
+    width: 100%;
+    background-color: #000;
+}
+
+.footer .container-1,
+.footer .container-2,
+.footer .container-redes {
+    padding: 0 20px;
+}
+
+.footer .container-1 h2 {
+    color: #053f89;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.footer .container-1 p {
+    margin: 20px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    color: #fff;
+}
+
+.footer .container-redes,
+.footer .container-redes a {
+    color: #fff;
+}
+
+.footer .container-redes .fa-brands {
+    margin: 20px 0;
+}
+
+.footer .container-2 h2{
+    margin: 20px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #053f89;
+}
+
+.footer .container-2 p,
+.footer .container-2 h3 {
+    color: #fff;
+    margin: 30px 0;
+}
+
+.container-autor {
+    font-size: 15px;
+    padding: 30px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #053f89;
+}

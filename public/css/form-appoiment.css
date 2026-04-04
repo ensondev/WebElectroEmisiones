@@ -1,0 +1,42 @@
+.form-appoiment {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.form-appoiment p {
+    color: #8e8e8e;;
+}
+
+.form-appoiment input,
+.form-appoiment select,
+.form-appoiment button {
+    padding: 10px 15px;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    resize: none;
+    overflow: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-appoiment button {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    background-color: #053f89;
+}
