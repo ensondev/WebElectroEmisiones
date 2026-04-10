@@ -1,14 +1,30 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container-carosel {
+    width: 100%;
+}
+
 .container_img-head {
     width: 100%;
-    height: 260px;
-    background-color: #053f89;
+    height: auto;
 }
 
 .container_img-head img {
     width: 100%;
+    height: 100%;
+}
+
+.main {
+    padding: 0 20px;
 }
 
 .main .sub-title,
+.main .sub-title-service,
 .services .sub-title-service {
     font-size: 15px;
     font-weight: 100;
@@ -17,7 +33,8 @@
     text-align: center;
 }
 
-.main .sub-title_two {
+.main .sub-title_two,
+.main .sub-title-service-two {
     text-align: center;
     margin: 10px 0;
     font-weight: bolder;
@@ -29,14 +46,33 @@
     font-weight: bolder;
 }
 
-/* BOTON AGENDAR CITA */
-.schedule {
-    width: 100%;
-    padding: 15px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bolder;
-    border: none;
-    border-radius: 5px;
-    background-color: #053f89;
+@media (min-width: 1200px) {
+    .main .container-carosel {
+        width: 60%;
+    }
+
+    .container_img-head {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #8ea0b5; */
+    }
+
+    .container_img-head img {
+        width: 60%;
+        height: 100%;
+    }
+
+    .main .sub-title,
+    .main .sub-title-service {
+        font-size: 13px;
+        font-weight: 100;
+    }
+
+    .main .sub-title_two {
+        font-size: 25px;
+    }
+
 }

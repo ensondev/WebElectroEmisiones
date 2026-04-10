@@ -44,3 +44,12 @@
 .carousel-btn.next {
     right: 0;
 }
+
+@media (min-width: 1200px) {
+    .carousel {
+        width: 100%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+}

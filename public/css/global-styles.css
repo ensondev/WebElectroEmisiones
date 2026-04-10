@@ -10,7 +10,37 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* CONTENIDO DEL MENU */
-/* .main {
-    padding: 0 10px;
-} */
+.schedule {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    background-color: #053f89;
+}
+
+.schedule:hover {
+    background-color: #092a57;
+}
+
+@media (min-width: 1200px) {
+    .schedule {
+        border: none;
+        color: #053f89;
+        font-size: 30px;
+        font-weight: 400;
+        background-color: transparent;
+        font-family: Impact;
+        font-style: italic;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .schedule:hover {
+        background-color: transparent;
+        color: #092a57;
+        text-decoration: underline;
+    }
+}

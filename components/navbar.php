@@ -7,7 +7,7 @@
 <div class="container-nav">
     <div class="container_icon container_icon-1">
         <div class="icon">
-            <i class="fa-solid fa-calendar-days"></i>
+            <i class="fa-solid fa-phone"></i>
         </div>
         <div class="container-text">
             <h3>Atención al cliente</h3>
@@ -16,18 +16,18 @@
     </div>
     <div class="container_icon container_icon-2">
         <div class="icon">
-            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-location-dot"></i>
         </div>
         <div class="container-text">
             <h3>Taller automotriz ElectroEmisiones</h3>
             <a href="https://maps.app.goo.gl/hbHiu9VvxA5oSWmj6" target="_blank">
-                Vergeles, Guayaquil
+                11er Callejón 23B NE, Los Vergeles, Guayaquil, Ecuador
             </a>
         </div>
     </div>
     <div class="container_icon container_icon-3">
         <div class="icon">
-            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-calendar-days"></i>
         </div>
         <div class="container-text">
             <h3>Horario de atención</h3>
@@ -42,7 +42,7 @@
         <li><a href="../pages/index.php">Inicio</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Productos</a></li>
-        <li><a href="#">Contáctanos</a></li>
-        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="../pages/form-appointment.php">Contáctanos</a></li>
+        <li><a href="../pages/about-us.php">Sobre Nosotros</a></li>
     </ul>
 </div>

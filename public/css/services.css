@@ -2,22 +2,39 @@
     width: 100%;
     margin-top: 20px;
     border-top: 1px solid #efefef;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1 columna por defecto */
+    padding: 20px 0;
+    gap: 20px;
+}
+
+/* Títulos ocupan toda la fila */
+.sub-title-service,
+.sub-title-service-two {
+    text-align: center;
 }
 
 .card-service {
-    border: 1px solid #efefef;
-    margin: 20px 0;
-    padding-bottom: 20px ;
-    box-shadow: 2px 1px 8px #e4e4e4;
     width: 100%;
+    border: 1px solid #efefef;
+    padding-bottom: 20px;
+    box-shadow: 2px 1px 8px #e4e4e4;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 10px;
 }
 
 .card-service img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .card-service h2 {
@@ -31,4 +48,28 @@
     color: #fff;
     text-decoration: none;
     background-color: #053f89;
+    transition: 0.3s;
+}
+
+.card-service a:hover {
+    background-color: #092a57;
+}
+
+/* Desde 884px → 2 columnas */
+@media (min-width: 884px) {
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .services {
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card-service a {
+        padding: 7px 20px;
+    }
 }

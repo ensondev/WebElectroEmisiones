@@ -1,6 +1,8 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
 require '../vendor/autoload.php';
 
 $status = ""; // variable para controlar alertas
@@ -69,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/global-styles.css">
     <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="../public/css/mantenimiento-preventivo.css">
+    <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/form-appoiment.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
@@ -81,77 +83,85 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <?php require_once '../components/navbar.php' ?>
+    <div class="container-img_contact">
+        <h2>CONTACTANOS</h2>
+    </div>
     <main class="main">
         <form class="form-appoiment" action="" method="POST" novalidate>
 
-            <h2>Cotiza con nuestros asesores</h2>
-            <p>Si quieres cotizar y agendar directamente con un asesor, llena el siguiente formulario.</p>
-
-            <div class="form-group">
-                <label>Nombre completo*</label>
-                <input type="text" name="nombre" placeholder="Ej: Juan Pérez" required minlength="3" maxlength="60">
+            <div class="group-container-1">
+                <div class="group-text">
+                    <h2>Cotiza con nuestros asesores</h2>
+                    <p>Si quieres cotizar y agendar directamente con un asesor, llena el siguiente formulario.</p>
+                </div>
+                <div class="group-client">
+                    <div class="form-group">
+                        <label>Nombre completo*</label>
+                        <input type="text" name="nombre" placeholder="Ej: Juan Pérez" required minlength="3" maxlength="60">
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono*</label>
+                        <input type="tel" name="telefono" placeholder="Ej: 0987654321" required pattern="[0-9]{10}">
+                    </div>
+                    <div class="form-group">
+                        <label>Correo electrónico*</label>
+                        <input type="email" name="correo" placeholder="ejemplo@gmail.com" required>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Teléfono*</label>
-                <input type="tel" name="telefono" placeholder="Ej: 0987654321" required pattern="[0-9]{10}">
+            <div class="group-container-vehicle">
+                <div class="group-vehicle-1">
+                    <div class="form-group">
+                        <label>Marca del vehículo*</label>
+                        <input type="text" name="marca" placeholder="Ej: Toyota" required minlength="2">
+                    </div>
+                    <div class="form-group">
+                        <label>Modelo del vehículo*</label>
+                        <input type="text" name="modelo" placeholder="Ej: Corolla" required minlength="2">
+                    </div>
+                    <div class="form-group">
+                        <label>Año del vehículo*</label>
+                        <input type="number" name="anio" placeholder="Ej: 2020" required min="1980" max="2026">
+                    </div>
+                </div>
+                <div class="group-vehicle-2">
+                    <div class="form-group">
+                        <label>Patente del vehículo*</label>
+                        <input type="text" name="patente" placeholder="Ej: ABC1234" required minlength="5">
+                    </div>
+                    <div class="form-group">
+                        <label>Kilometraje*</label>
+                        <input type="number" name="kilometraje" placeholder="Ej: 50000" required min="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Placa*</label>
+                        <input type="text" name="placa" placeholder="Ej: GYE-1234" required minlength="5">
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Correo electrónico*</label>
-                <input type="email" name="correo" placeholder="ejemplo@gmail.com" required>
-            </div>
-
-            <div class="form-group">
-                <label>Marca del vehículo*</label>
-                <input type="text" name="marca" placeholder="Ej: Toyota" required minlength="2">
-            </div>
-
-            <div class="form-group">
-                <label>Modelo del vehículo*</label>
-                <input type="text" name="modelo" placeholder="Ej: Corolla" required minlength="2">
-            </div>
-
-            <div class="form-group">
-                <label>Año del vehículo*</label>
-                <input type="number" name="anio" placeholder="Ej: 2020" required min="1980" max="2026">
-            </div>
-
-            <div class="form-group">
-                <label>Patente del vehículo*</label>
-                <input type="text" name="patente" placeholder="Ej: ABC1234" required minlength="5">
-            </div>
-
-            <div class="form-group">
-                <label>Kilometraje*</label>
-                <input type="number" name="kilometraje" placeholder="Ej: 50000" required min="0">
-            </div>
-
-            <div class="form-group">
-                <label>Placa*</label>
-                <input type="text" name="placa" placeholder="Ej: GYE-1234" required minlength="5">
-            </div>
-
-            <div class="form-group">
-                <label>Servicio*</label>
-                <select name="servicio" required>
-                    <option value="">Selecciona un servicio</option>
-                    <option value="Mantenimiento Preventivo">Mantenimiento Preventivo</option>
-                    <option value="Mantenimiento Correctivo">Mantenimiento Correctivo</option>
-                    <option value="Diagnóstico">Diagnóstico</option>
-                    <option value="Sistema de Inyección">Sistema de Inyección</option>
-                    <option value="Aire Acondicionado">Aire Acondicionado</option>
-                    <option value="Electricidad Automotriz">Electricidad Automotriz</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label>Combustible*</label>
-                <select name="combustible" required>
-                    <option value="">Selecciona combustible</option>
-                    <option value="Gasolina">Gasolina</option>
-                    <option value="Diésel">Diésel</option>
-                </select>
+            <div class="group-container-others">
+                <div class="form-group">
+                    <label>Servicio*</label>
+                    <select name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="Mantenimiento Preventivo">Mantenimiento Preventivo</option>
+                        <option value="Mantenimiento Correctivo">Mantenimiento Correctivo</option>
+                        <option value="Diagnóstico">Diagnóstico</option>
+                        <option value="Sistema de Inyección">Sistema de Inyección</option>
+                        <option value="Aire Acondicionado">Aire Acondicionado</option>
+                        <option value="Electricidad Automotriz">Electricidad Automotriz</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Combustible*</label>
+                    <select name="combustible" required>
+                        <option value="">Selecciona combustible</option>
+                        <option value="Gasolina">Gasolina</option>
+                        <option value="Diésel">Diésel</option>
+                    </select>
+                </div>
             </div>
 
             <div class="form-group">

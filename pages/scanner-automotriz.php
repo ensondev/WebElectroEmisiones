@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/global-styles.css">
     <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="../public/css/mantenimiento-preventivo.css">
+    <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
     <link rel="stylesheet" href="../public/css/footer.css">
@@ -19,11 +19,17 @@
     <?php require_once '../components/navbar.php' ?>
     <main class="main">
         <section class="section-info">
-            <h2>Scanner Automotriz</h2>
-            <p>El <strong>diagnóstico electrónico</strong> permite identificar fallas mediante equipos especializados que se conectan a la computadora del vehículo, analizando códigos de error y parámetros en tiempo real.</p>
-            <p>Este procedimiento permite identificar con exactitud fallas en los sistemas electrónicos, sensores y módulos de control, optimizando el proceso de reparación. Gracias a esta tecnología, se minimizan los tiempos de intervención, se evitan reemplazos innecesarios y se garantiza una solución más eficiente y confiable.</p>
-            <button class="schedule">Agenda Tu Cita Aquí</button>
-            <img class="img-prevent" src="../public/image/scanner-automotriz-2.jpg" alt="">
+            <div class="container-info">
+                <div class="container-text">
+                    <h2>Scanner Automotriz</h2>
+                    <p>El <strong>diagnóstico electrónico</strong> permite identificar fallas mediante equipos especializados que se conectan a la computadora del vehículo, analizando códigos de error y parámetros en tiempo real.</p>
+                    <p>Este procedimiento permite identificar con exactitud fallas en los sistemas electrónicos, sensores y módulos de control, optimizando el proceso de reparación. Gracias a esta tecnología, se minimizan los tiempos de intervención, se evitan reemplazos innecesarios y se garantiza una solución más eficiente y confiable.</p>
+                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+                </div>
+                <div class="container-img">
+                    <img class="img-prevent" src="../public/image/scanner-automotriz-2.jpg" alt="">
+                </div>
+            </div>
 
             <h2 class="sub-title">Marcas de autos</h2>
             <?php require_once '../components/carousel.php' ?>

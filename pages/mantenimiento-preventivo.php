@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/global-styles.css">
     <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="../public/css/mantenimiento-preventivo.css">
+    <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
     <link rel="stylesheet" href="../public/css/footer.css">
@@ -19,14 +19,19 @@
     <?php require_once '../components/navbar.php' ?>
     <main class="main">
         <section class="section-info">
-            <h2>Mantenimiento Preventivo</h2>
-            <p>El <strong>mantenimiento preventivo automotriz</strong> consiste en una serie de revisiones periódicas orientadas a garantizar el correcto funcionamiento del vehículo y prevenir fallas mecánicas o electrónicas que puedan generar reparaciones costosas.</p>
-            <p>
-                Este proceso incluye tareas como el cambio oportuno de aceite y filtros, la revisión de los sistemas de frenos, suspensión y dirección, el control del estado de la batería, la verificación de niveles y condiciones de los fluidos, así como la inspección general de luces y componentes esenciales. Asimismo, contempla ajustes técnicos como alineación y balanceo, junto con el reemplazo de piezas clave según el kilometraje recomendado.
-            </p>
-            <p><strong>Nota:</strong> Es importante considerar que cada vehículo puede requerir un plan específico de mantenimiento, por lo que se aconseja seguir las indicaciones del fabricante o del técnico especializado.</p>
-            <button class="schedule">Agenda Tu Cita Aquí</button>
-            <img class="img-prevent" src="../public/image/mantenimiento-preventivo-2.jpg" alt="">
+
+            <div class="container-info">
+                <div class="container-text">
+                    <h2>Mantenimiento Preventivo</h2>
+                    <p>El <strong>mantenimiento preventivo automotriz</strong> consiste en una serie de revisiones periódicas orientadas a garantizar el correcto funcionamiento del vehículo y prevenir fallas mecánicas o electrónicas que puedan generar reparaciones costosas.</p>
+                    <p>Este proceso incluye tareas como el cambio oportuno de aceite y filtros, la revisión de los sistemas de frenos, suspensión y dirección, el control del estado de la batería, la verificación de niveles y condiciones de los fluidos, así como la inspección general de luces y componentes esenciales. Asimismo, contempla ajustes técnicos como alineación y balanceo, junto con el reemplazo de piezas clave según el kilometraje recomendado.</p>
+                    <p><strong>Nota:</strong> Es importante considerar que cada vehículo puede requerir un plan específico de mantenimiento, por lo que se aconseja seguir las indicaciones del fabricante o del técnico especializado.</p>
+                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+                </div>
+                <div class="container-img">
+                    <img class="img-prevent" src="../public/image/mantenimiento-preventivo-2.jpg" alt="">
+                </div>
+            </div>
 
             <h2 class="sub-title">Marcas de autos</h2>
             <?php require_once '../components/carousel.php' ?>

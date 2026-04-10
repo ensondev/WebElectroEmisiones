@@ -1,21 +1,58 @@
+.container-img_contact {
+    width: 100%;
+    height: 100px;
+    background: url("https://static.vecteezy.com/system/resources/previews/002/370/744/non_2x/technology-background-with-a-mechanical-concept-vector.jpg");
+    /* background-size: cover; */
+    color: #ffffff;
+    font-family: Impact;
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
 .form-appoiment {
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-top: 1px solid #efefef;
-    border-bottom: 1px solid #efefef;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    /* background-color: #f2f2f2; */
+}
+
+.group-text {
+    border-bottom: 1px solid #5b5b5b;
+    margin-bottom: 20px;
+}
+
+.group-text p {
+    font-size: 14px;
+    margin: 20px 0;
 }
 
 .form-appoiment p {
-    color: #8e8e8e;;
+    color: #464646;
 }
 
 .form-appoiment input,
 .form-appoiment select,
 .form-appoiment button {
-    padding: 10px 15px;
+    padding: 12px 15px;
+    border-radius: 7px;
+    border: 1px solid #d7d7d7;
+}
+
+.form-appoiment input,
+.form-appoiment select,
+.form-group textarea {
+    background-color: #f0f0f0;
+}
+
+select option {
+    background-color: #fff;
 }
 
 .form-group textarea {
@@ -24,9 +61,12 @@
     padding: 15px;
     resize: none;
     overflow: auto;
+    border: 1px solid #d7d7d7;
+    border-radius: 7px;
 }
 
 .form-group {
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -34,9 +74,84 @@
 .form-appoiment button {
     width: 100%;
     padding: 15px;
-    color: #fff;
-    font-weight: bolder;
+    color: #ffffff;
+    font-size: 15px;
     border: none;
     border-radius: 5px;
     background-color: #053f89;
+}
+
+@media (min-width: 884px) {
+
+    .container-img_contact {
+        font-size: 25px;
+    }
+
+    .group-client {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .group-client .form-group,
+    .group-vehicle-1 .form-group,
+    .group-vehicle-2 .form-group,
+    .group-container-others .form-group {
+        width: 100%;
+    }
+
+    .group-client .form-group input,
+    .group-vehicle-1 .form-group input,
+    .group-vehicle-2 .form-group input,
+    .group-container-others .form-group input {
+        width: 100%;
+    }
+
+    .group-vehicle-1,
+    .group-container-others {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .group-vehicle-2 {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-appoiment {
+        width: 60%;
+    }
+
+    .form-appoiment input,
+    .form-appoiment select {
+        padding: 7px;
+    }
+
+    .form-appoiment label,
+    .form-appoiment input::placeholder,
+    .form-appoiment textarea::placeholder {
+        font-size: 12px;
+    }
+
+    /* .form-appoiment input::placeholder {
+        color: #b7b7b7;
+    } */
+
+    .form-appoiment label {
+        font-weight: bold;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .form-group textarea {
+        height: 80px;
+    }
 }

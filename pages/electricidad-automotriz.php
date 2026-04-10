@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/global-styles.css">
     <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="../public/css/mantenimiento-preventivo.css">
+    <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
     <link rel="stylesheet" href="../public/css/footer.css">
@@ -19,11 +19,17 @@
     <?php require_once '../components/navbar.php' ?>
     <main class="main">
         <section class="section-info">
-            <h2>Electricidad Automotriz</h2>
-            <p>La <strong>electricidad automotriz</strong> abarca el diagnóstico y reparación de todos los sistemas eléctricos del vehículo.</p>
-            <p>Se realizan servicios de diagnóstico, mantenimiento y reparación de los sistemas eléctricos, incluyendo la evaluación de la batería, alternador, motor de arranque, cableado, sensores y módulos electrónicos. Mediante el uso de equipos especializados, es posible identificar fallas de manera precisa y eficiente, garantizando soluciones confiables que restablecen el óptimo desempeño del vehículo.</p>
-            <button class="schedule">Agenda Tu Cita Aquí</button>
-            <img class="img-prevent" src="../public/image/Electricidad-Automotriz-2.jpg" alt="">
+            <div class="container-info">
+                <div class="container-text">
+                    <h2>Electricidad Automotriz</h2>
+                    <p>La <strong>electricidad automotriz</strong> abarca el diagnóstico y reparación de todos los sistemas eléctricos del vehículo.</p>
+                    <p>Se realizan servicios de diagnóstico, mantenimiento y reparación de los sistemas eléctricos, incluyendo la evaluación de la batería, alternador, motor de arranque, cableado, sensores y módulos electrónicos. Mediante el uso de equipos especializados, es posible identificar fallas de manera precisa y eficiente, garantizando soluciones confiables que restablecen el óptimo desempeño del vehículo.</p>
+                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+                </div>
+                <div class="container-img">
+                    <img class="img-prevent" src="../public/image/Electricidad-Automotriz-2.jpg" alt="">
+                </div>
+            </div>
 
             <h2 class="sub-title">Marcas de autos</h2>
             <?php require_once '../components/carousel.php' ?>

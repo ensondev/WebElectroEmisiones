@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/global-styles.css">
     <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="../public/css/mantenimiento-preventivo.css">
+    <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
     <link rel="stylesheet" href="../public/css/footer.css">
@@ -19,11 +19,17 @@
     <?php require_once '../components/navbar.php' ?>
     <main class="main">
         <section class="section-info">
-            <h2>Mantenimiento Correctivo</h2>
-            <p>El <strong>mantenimiento correctivo</strong> se enfoca en la detección, diagnóstico y reparación de fallas presentes en el vehículo. Este tipo de servicio se realiza cuando un componente ya ha sufrido desgaste o daño y requiere intervención técnica especializada.</p>
-            <p>Incluye trabajos especializados en el motor, sistema de transmisión, suspensión, dirección, frenos, sistema eléctrico, climatización y sistema de enfriamiento. Cada servicio se ejecuta a partir de un diagnóstico preciso, con el fin de aplicar reparaciones eficaces que garanticen la seguridad, confiabilidad y óptimo funcionamiento del vehículo a largo plazo.</p>
-            <button class="schedule">Agenda Tu Cita Aquí</button>
-            <img class="img-prevent" src="../public/image/mantenimiento-correctivo-1.jpg" alt="">
+            <div class="container-info">
+                <div class="container-text">
+                    <h2>Mantenimiento Correctivo</h2>
+                    <p>El <strong>mantenimiento correctivo</strong> se enfoca en la detección, diagnóstico y reparación de fallas presentes en el vehículo. Este tipo de servicio se realiza cuando un componente ya ha sufrido desgaste o daño y requiere intervención técnica especializada.</p>
+                    <p>Incluye trabajos especializados en el motor, sistema de transmisión, suspensión, dirección, frenos, sistema eléctrico, climatización y sistema de enfriamiento. Cada servicio se ejecuta a partir de un diagnóstico preciso, con el fin de aplicar reparaciones eficaces que garanticen la seguridad, confiabilidad y óptimo funcionamiento del vehículo a largo plazo.</p>
+                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+                </div>
+                <div class="container-img">
+                    <img class="img-prevent" src="../public/image/mantenimiento-correctivo-1.jpg" alt="">
+                </div>
+            </div>
 
             <h2 class="sub-title">Marcas de autos</h2>
             <?php require_once '../components/carousel.php' ?>

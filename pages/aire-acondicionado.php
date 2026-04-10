@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/global-styles.css">
     <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="../public/css/mantenimiento-preventivo.css">
+    <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
     <link rel="stylesheet" href="../public/css/footer.css">
@@ -19,11 +19,18 @@
     <?php require_once '../components/navbar.php' ?>
     <main class="main">
         <section class="section-info">
-            <h2>Sistema de Aire Acondicionado</h2>
-            <p>El <strong>sistema de aire acondicionado</strong> requiere mantenimiento periódico para garantizar un funcionamiento eficiente.</p>
-            <p>Se ofrecen servicios de inspección integral que incluyen recarga de refrigerante, localización y reparación de fugas, pruebas de presión, limpieza del sistema y mantenimiento de sus elementos principales. Estas acciones permiten mantener una temperatura adecuada en el habitáculo, garantizando confort durante la conducción y un funcionamiento eficiente del sistema.</p>
-            <button class="schedule">Agenda Tu Cita Aquí</button>
-            <img class="img-prevent" src="../public/image/sistema-aire-condicionado-1.jpg" alt="">
+
+        <div class="container-info">
+            <div class="container-text">
+                <h2>Sistema de Aire Acondicionado</h2>
+                <p>El <strong>sistema de aire acondicionado</strong> requiere mantenimiento periódico para garantizar un funcionamiento eficiente.</p>
+                <p>Se ofrecen servicios de inspección integral que incluyen recarga de refrigerante, localización y reparación de fugas, pruebas de presión, limpieza del sistema y mantenimiento de sus elementos principales. Estas acciones permiten mantener una temperatura adecuada en el habitáculo, garantizando confort durante la conducción y un funcionamiento eficiente del sistema.</p>
+                <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+            </div>
+            <div class="container-img">
+                <img class="img-prevent" src="../public/image/sistema-aire-condicionado-1.jpg" alt="">
+            </div>
+        </div>
 
             <h2 class="sub-title">Marcas de autos</h2>
             <?php require_once '../components/carousel.php' ?>
