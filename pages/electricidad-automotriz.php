@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
+    <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
@@ -23,7 +24,16 @@
                 <div class="container-text">
                     <h2>Electricidad Automotriz</h2>
                     <p>La <strong>electricidad automotriz</strong> abarca el diagnóstico y reparación de todos los sistemas eléctricos del vehículo.</p>
-                    <p>Se realizan servicios de diagnóstico, mantenimiento y reparación de los sistemas eléctricos, incluyendo la evaluación de la batería, alternador, motor de arranque, cableado, sensores y módulos electrónicos. Mediante el uso de equipos especializados, es posible identificar fallas de manera precisa y eficiente, garantizando soluciones confiables que restablecen el óptimo desempeño del vehículo.</p>
+                    <p>Dentro de este servicio se incluyen:</p>
+                    <ul>
+                        <li>Diagnóstico de fallas eléctricas</li>
+                        <li>Revisión y mantenimiento de batería</li>
+                        <li>Evaluación de alternador y sistema de carga</li>
+                        <li>Revisión del motor de arranque</li>
+                        <li>Inspección y reparación de cableado</li>
+                        <li>Diagnóstico de sensores y módulos electrónicos</li>
+                    </ul>
+                    <p>Estos trabajos permiten detectar y solucionar problemas eléctricos de forma precisa, evitando fallas mayores y asegurando un funcionamiento confiable del vehículo.</p>
                     <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
                 </div>
                 <div class="container-img">
@@ -34,10 +44,6 @@
             <h2 class="sub-title">Marcas de autos</h2>
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
-        </section>
-        <section class="section-map">
-            <h2>TALLER ELECTRO EMISIONES</h2>
-            <?php require_once '../components/map.php' ?>
         </section>
     </main>
     <?php require_once '../components/footer.php' ?>

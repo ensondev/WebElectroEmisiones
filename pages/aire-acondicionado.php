@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
+    <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
@@ -20,25 +21,30 @@
     <main class="main">
         <section class="section-info">
 
-        <div class="container-info">
-            <div class="container-text">
-                <h2>Sistema de Aire Acondicionado</h2>
-                <p>El <strong>sistema de aire acondicionado</strong> requiere mantenimiento periódico para garantizar un funcionamiento eficiente.</p>
-                <p>Se ofrecen servicios de inspección integral que incluyen recarga de refrigerante, localización y reparación de fugas, pruebas de presión, limpieza del sistema y mantenimiento de sus elementos principales. Estas acciones permiten mantener una temperatura adecuada en el habitáculo, garantizando confort durante la conducción y un funcionamiento eficiente del sistema.</p>
-                <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+            <div class="container-info">
+                <div class="container-text">
+                    <h2>Sistema de Aire Acondicionado</h2>
+                    <p>El <strong>sistema de aire acondicionado</strong> requiere mantenimiento periódico para garantizar un funcionamiento eficiente.</p>
+                    <p>Dentro de este servicio se incluyen:</p>
+                    <ul>
+                        <li>Inspección general del sistema de aire acondicionado</li>
+                        <li>Recarga de refrigerante</li>
+                        <li>Detección y reparación de fugas</li>
+                        <li>Pruebas de presión del sistema</li>
+                        <li>Limpieza de componentes</li>
+                        <li>Revisión del compresor y demás elementos principales</li>
+                    </ul>
+                    <p>En Electroemisiones realizamos el mantenimiento del aire acondicionado con equipos adecuados, asegurando un funcionamiento eficiente para que disfrutes de un ambiente cómodo al conducir.</p>
+                </div>
+                <div class="container-img">
+                    <img class="img-prevent" src="../public/image/sistema-aire-condicionado-1.jpg" alt="">
+                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+                </div>
             </div>
-            <div class="container-img">
-                <img class="img-prevent" src="../public/image/sistema-aire-condicionado-1.jpg" alt="">
-            </div>
-        </div>
 
             <h2 class="sub-title">Marcas de autos</h2>
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
-        </section>
-        <section class="section-map">
-            <h2>TALLER ELECTRO EMISIONES</h2>
-            <?php require_once '../components/map.php' ?>
         </section>
     </main>
     <?php require_once '../components/footer.php' ?>

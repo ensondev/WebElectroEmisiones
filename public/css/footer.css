@@ -1,53 +1,86 @@
-.footer {
+/* PIE DE PÁGINA */
+.pie-pagina {
     padding-top: 20px;
     width: 100%;
-    background-color: #000;
+    background-color: #1c1c1c;
 }
 
-.footer .container-contact,
-.footer .container-2,
-.footer .container-redes {
-    padding: 0 20px;
+/* CONTENIDO GENERAL */
+.pie-contenido {
+    width: 100%;
 }
 
-.footer .container-contact h2 {
+/* COLUMNAS */
+.pie-columna-contacto,
+.pie-columna-ubicacion {
+    padding: 20px;
+}
+
+/* LLAMADA */
+.pie-llamada h2 {
     color: #053f89;
     font-weight: 100;
     font-size: 18px;
 }
 
-.footer .container-contact p {
-    margin: 20px 0;
+.pie-llamada p {
+    margin-top: 20px;
+    font-size: 28px;
     font-family: Impact;
-    font-size: 35px;
     font-style: italic;
     color: #fff;
 }
 
-.footer .container-redes,
-.footer .container-redes a {
+/* REDES SOCIALES */
+.pie-redes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
     color: #fff;
 }
 
-.footer .container-redes .fa-brands {
-    margin: 20px 0;
+.pie-redes a {
+    color: #fff;
 }
 
-.footer .container-2 h2{
-    margin: 20px 0;
+.pie-redes .fa-brands {
+    margin-top: 20px;
+}
+
+/* UBICACIÓN */
+.pie-columna-ubicacion h2 {
     font-family: Impact;
     font-size: 25px;
     font-style: italic;
     color: #053f89;
 }
 
-.footer .container-2 p,
-.footer .container-2 h3 {
+.pie-columna-ubicacion p,
+.pie-columna-ubicacion h3 {
     color: #fff;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
-.container-autor {
+/* BOTÓN MAPA */
+.boton-mapa {
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #053f89;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boton-mapa:hover {
+    background-color: #092a57;
+}
+
+/* AUTOR */
+.pie-autor {
     font-size: 15px;
     padding: 30px;
     width: 100%;
@@ -58,18 +91,25 @@
     background-color: #053f89;
 }
 
-@media (min-width: 1200px) {
-    .container-top {
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+
+    .pie-contenido {
         display: flex;
         justify-content: space-evenly;
     }
 
-    .footer .container-autor p {
+    .pie-autor p {
         font-size: 10px;
     }
 
-    .footer .container-2 p,
-    .footer .container-2 h3 {
+    .pie-columna-ubicacion p,
+    .pie-columna-ubicacion h3 {
+        font-size: 12px;
+    }
+
+    .pie-redes a {
         font-size: 12px;
     }
 }

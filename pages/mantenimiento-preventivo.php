@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
+    <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
@@ -24,23 +25,31 @@
                 <div class="container-text">
                     <h2>Mantenimiento Preventivo</h2>
                     <p>El <strong>mantenimiento preventivo automotriz</strong> consiste en una serie de revisiones periódicas orientadas a garantizar el correcto funcionamiento del vehículo y prevenir fallas mecánicas o electrónicas que puedan generar reparaciones costosas.</p>
-                    <p>Este proceso incluye tareas como el cambio oportuno de aceite y filtros, la revisión de los sistemas de frenos, suspensión y dirección, el control del estado de la batería, la verificación de niveles y condiciones de los fluidos, así como la inspección general de luces y componentes esenciales. Asimismo, contempla ajustes técnicos como alineación y balanceo, junto con el reemplazo de piezas clave según el kilometraje recomendado.</p>
-                    <p><strong>Nota:</strong> Es importante considerar que cada vehículo puede requerir un plan específico de mantenimiento, por lo que se aconseja seguir las indicaciones del fabricante o del técnico especializado.</p>
-                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+                    <p>Dentro de este servicio se incluyen:</p>
+                    <ul>
+                        <li>Cambio de aceite y filtros</li>
+                        <li>Revisión del sistema de frenos</li>
+                        <li>Inspección de suspensión y dirección</li>
+                        <li>Chequeo del estado de la batería</li>
+                        <li>Verificación de niveles y condiciones de los fluidos</li>
+                        <li>Revisión general de luces y componentes eléctricos</li>
+                        <li>Alineación y balanceo</li>
+                        <li>Reemplazo de piezas según el kilometraje recomendado</li>
+                    </ul>
+                    <p>En <strong>Electroemisiones</strong> realizamos este servicio de forma completa y responsable, revisando cada detalle para que tu vehículo funcione correctamente y con seguridad. Nos adaptamos a lo que necesita tu auto y te orientamos para darle el mantenimiento adecuado en el momento indicado.</p>
                 </div>
                 <div class="container-img">
                     <img class="img-prevent" src="../public/image/mantenimiento-preventivo-2.jpg" alt="">
+                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
                 </div>
+
             </div>
 
             <h2 class="sub-title">Marcas de autos</h2>
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
         </section>
-        <section class="section-map">
-            <h2>TALLER ELECTRO EMISIONES</h2>
-            <?php require_once '../components/map.php' ?>
-        </section>
+
     </main>
     <?php require_once '../components/footer.php' ?>
 </body>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
+    <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
@@ -23,11 +24,19 @@
                 <div class="container-text">
                     <h2>Alineación y Balanceo</h2>
                     <p>La <strong>alineación y el balanceo</strong> son esenciales para garantizar la estabilidad, seguridad y desgaste uniforme de los neumáticos.</p>
-                    <p>Este servicio consiste en ajustar los ángulos de las ruedas y equilibrar su rotación, lo que permite optimizar la maniobrabilidad, reducir vibraciones y mejorar la seguridad durante la conducción. Asimismo, contribuye a prolongar la vida útil de las llantas y a mantener un desempeño eficiente del vehículo en todo tipo de condiciones.</p>
-                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+                    <p>Dentro de este servicio se incluyen:</p>
+                    <ul>
+                        <li>Ajuste de ángulos de alineación de las ruedas</li>
+                        <li>Corrección del paralelismo y caída según especificaciones del fabricante</li>
+                        <li>Balanceo de llantas y neumáticos</li>
+                        <li>Detección de vibraciones en el tren de rodaje</li>
+                        <li>Revisión del estado general de los neumáticos</li>
+                    </ul>
+                    <p>Este trabajo permite mejorar la maniobrabilidad del vehículo, reducir vibraciones al conducir y evitar el desgaste irregular de las llantas, lo que se traduce en una conducción más suave y segura.</p>
                 </div>
                 <div class="container-img">
                     <img class="img-prevent" src="../public/image/alineacion-balanceo-1.jpg" alt="">
+                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
                 </div>
             </div>
 
@@ -35,10 +44,7 @@
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
         </section>
-        <section class="section-map">
-            <h2>TALLER ELECTRO EMISIONES</h2>
-            <?php require_once '../components/map.php' ?>
-        </section>
+
     </main>
     <?php require_once '../components/footer.php' ?>
 </body>

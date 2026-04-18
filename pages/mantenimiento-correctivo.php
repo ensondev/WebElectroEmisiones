@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
+    <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
@@ -23,11 +24,22 @@
                 <div class="container-text">
                     <h2>Mantenimiento Correctivo</h2>
                     <p>El <strong>mantenimiento correctivo</strong> se enfoca en la detección, diagnóstico y reparación de fallas presentes en el vehículo. Este tipo de servicio se realiza cuando un componente ya ha sufrido desgaste o daño y requiere intervención técnica especializada.</p>
-                    <p>Incluye trabajos especializados en el motor, sistema de transmisión, suspensión, dirección, frenos, sistema eléctrico, climatización y sistema de enfriamiento. Cada servicio se ejecuta a partir de un diagnóstico preciso, con el fin de aplicar reparaciones eficaces que garanticen la seguridad, confiabilidad y óptimo funcionamiento del vehículo a largo plazo.</p>
-                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+                    <p>Dentro de este servicio se incluyen:</p>
+                    <ul>
+                        <li>Diagnóstico de fallas mecánicas y electrónicas</li>
+                        <li>Reparación de motor</li>
+                        <li>Revisión y reparación del sistema de transmisión</li>
+                        <li>Reparación de suspensión y dirección</li>
+                        <li>Mantenimiento y reparación de frenos</li>
+                        <li>Solución de fallas en el sistema eléctrico</li>
+                        <li>Revisión y reparación del sistema de climatización</li>
+                        <li>Mantenimiento del sistema de enfriamiento</li>
+                    </ul>
+                    <p>En Electroemisiones realizamos este tipo de trabajos con un diagnóstico previo preciso, para darte una solución efectiva y duradera. Nos enfocamos en que tu vehículo recupere su funcionamiento óptimo, brindándote seguridad y confianza al momento de conducir.</p>
                 </div>
                 <div class="container-img">
-                    <img class="img-prevent" src="../public/image/mantenimiento-correctivo-1.jpg" alt="">
+                    <img class="img-prevent" src="../public/image/mantenimiento-correctivo-1.webp" alt="">
+                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
                 </div>
             </div>
 
@@ -35,10 +47,7 @@
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
         </section>
-        <section class="section-map">
-            <h2>TALLER ELECTRO EMISIONES</h2>
-            <?php require_once '../components/map.php' ?>
-        </section>
+
     </main>
     <?php require_once '../components/footer.php' ?>
 </body>

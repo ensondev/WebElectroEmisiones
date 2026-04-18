@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
+    <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
@@ -23,21 +24,27 @@
                 <div class="container-text">
                     <h2>Pintura Automotriz</h2>
                     <p>El servicio de <strong>pintura automotriz</strong> está orientado a la restauración estética y protección de la carrocería del vehículo, devolviéndole su apariencia original y preservando su valor.</p>
-                    <p>Se realizan trabajos de preparación de superficies, corrección de imperfecciones, aplicación de pintura y acabado con productos de alta calidad, garantizando uniformidad en el color y resistencia a factores ambientales. Cada proceso se ejecuta bajo estándares técnicos que aseguran un acabado duradero, brillante y acorde a las especificaciones del fabricante.</p>
-                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+                    <p>Dentro de este servicio se incluyen:</p>
+                    <ul>
+                        <li>Preparación y lijado de superficies</li>
+                        <li>Corrección de golpes, rayones e imperfecciones</li>
+                        <li>Aplicación de primer y selladores</li>
+                        <li>Pintura en cabina con igualación de color</li>
+                        <li>Acabado y pulido final</li>
+                        <li>Acabado y pulido final</li>
+                        <li>Protección contra agentes externos y corrosión</li>
+                    </ul>
+                    <p>En Electroemisiones trabajamos la pintura automotriz con atención al detalle, cuidando cada etapa del proceso para lograr un acabado limpio, uniforme y acorde a las características originales del vehículo.</p>
                 </div>
                 <div class="container-img">
                     <img class="img-prevent" src="../public/image/pintura-automotriz-1.jpg" alt="">
+                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
                 </div>
             </div>
 
             <h2 class="sub-title">Marcas de autos</h2>
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
-        </section>
-        <section class="section-map">
-            <h2>TALLER ELECTRO EMISIONES</h2>
-            <?php require_once '../components/map.php' ?>
         </section>
     </main>
     <?php require_once '../components/footer.php' ?>

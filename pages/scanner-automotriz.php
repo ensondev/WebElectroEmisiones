@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
+    <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
@@ -23,11 +24,21 @@
                 <div class="container-text">
                     <h2>Scanner Automotriz</h2>
                     <p>El <strong>diagnóstico electrónico</strong> permite identificar fallas mediante equipos especializados que se conectan a la computadora del vehículo, analizando códigos de error y parámetros en tiempo real.</p>
-                    <p>Este procedimiento permite identificar con exactitud fallas en los sistemas electrónicos, sensores y módulos de control, optimizando el proceso de reparación. Gracias a esta tecnología, se minimizan los tiempos de intervención, se evitan reemplazos innecesarios y se garantiza una solución más eficiente y confiable.</p>
+                    <p>Dentro de este servicio se incluyen:</p>
+                    <ul>
+                        <li>Lectura y borrado de códigos de error</li>
+                        <li>Diagnóstico de sistemas electrónicos del vehículo</li>
+                        <li>Revisión de sensores y actuadores</li>
+                        <li>Análisis de parámetros en tiempo real</li>
+                        <li>Detección de fallas en módulos de control</li>
+                        <li>Evaluación del rendimiento del motor y otros sistemas</li>
+                    </ul>
+                    <p>Este procedimiento permite detectar problemas con mayor precisión, optimizando el proceso de reparación y evitando cambios innecesarios de piezas.</p>
+                    <p>En Electroemisiones realizamos diagnósticos con equipos actualizados, brindándote información clara y soluciones efectivas para que tu vehículo funcione de manera eficiente y confiable.</p>
                     <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
                 </div>
                 <div class="container-img">
-                    <img class="img-prevent" src="../public/image/scanner-automotriz-2.jpg" alt="">
+                    <img class="img-prevent" src="../public/image/scanner-automotriz-2.webp" alt="">
                 </div>
             </div>
 
@@ -35,10 +46,7 @@
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
         </section>
-        <section class="section-map">
-            <h2>TALLER ELECTRO EMISIONES</h2>
-            <?php require_once '../components/map.php' ?>
-        </section>
+
     </main>
     <?php require_once '../components/footer.php' ?>
 </body>

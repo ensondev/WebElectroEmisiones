@@ -1,6 +1,59 @@
 .map-container {
-    width: 80%;
-    padding: 20px;
+    background: url("../image/fondo-map.png");
+    background-size: cover;
+    width: 100%;
     margin-bottom: 20px;
-    background-color: #476876;
+    /* background-color: #dedede; */
+}
+
+.map-container .container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-container .container-info-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.map-container .container-img img {
+    width: 80%;
+    /* object-fit: cover; */
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.container-info-map h2 {
+    font-family: Impact;
+    color: #053f89;
+}
+
+.container-info-map h3,
+.container-info-map p {
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+@media (min-width: 884px) {
+    .map-container {
+        display: flex;
+        height: 400px;
+    }
+
+    .map-container .container-img {
+        width: 50%;
+    }
+
+    .container-img img {
+        height: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .map-container {
+        width: 60%;
+    }
 }

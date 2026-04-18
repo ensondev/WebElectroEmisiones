@@ -3,24 +3,29 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin: 20px 0;
+    height: 60px;
+    margin: 20px 0 40px 0;
 }
 
-/* TRACK (donde se mueven las imágenes) */
 .carousel-track {
+    height: 100%;
     display: flex;
+    align-items: center;
     transition: transform 0.4s ease-in-out;
 }
 
 .carousel-track img {
-    width: 100px;
-    /* height: 100px; */
+    width: 80px;
+    height: 100%;
     object-fit: contain;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
-.carousel img:nth-child(2),
-.carousel img:last-child {
+.carousel-track img:nth-child(8){
+    width: 130px;
+}
+
+.carousel-track img:nth-child(9){
     width: 70px;
 }
 
@@ -28,7 +33,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: #00000039;
     color: white;
     border: none;
     font-size: 20px;

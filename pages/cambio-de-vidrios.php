@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
+    <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
@@ -24,7 +25,16 @@
                 <div class="container-text">
                     <h2>Cambio de Vidrios</h2>
                     <p>Se realizan trabajos de reparación y sustitución de parabrisas y cristales laterales, atendiendo daños como fisuras, impactos o desprendimientos. Cada intervención se ejecuta con materiales y técnicas especializadas, asegurando un ajuste preciso, resistencia adecuada y un acabado confiable acorde a los estándares de seguridad.</p>
-                    <p>Atendemos daños como fisuras, rayaduras o desprendimientos, garantizando seguridad y visibilidad en la conducción.</p>
+                    <p>Dentro de este servicio se incluyen:</p>
+                    <ul>
+                        <li>Reparación de pequeñas fisuras y golpes en el vidrio</li>
+                        <li>Sustitución de parabrisas delantero y trasero</li>
+                        <li>Cambio de vidrios laterales</li>
+                        <li>Sellado y ajuste para evitar filtraciones</li>
+                        <li>Revisión del correcto asentamiento del cristal</li>
+                        <li>Limpieza y acabado final de instalación</li>
+                    </ul>
+                    <p>Este trabajo se realiza asegurando un ajuste preciso y una correcta fijación, lo que garantiza visibilidad, resistencia y seguridad durante la conducción.</p>
                     <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
                 </div>
                 <div class="container-img">
@@ -35,10 +45,6 @@
             <h2 class="sub-title">Marcas de autos</h2>
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
-        </section>
-        <section class="section-map">
-            <h2>TALLER ELECTRO EMISIONES</h2>
-            <?php require_once '../components/map.php' ?>
         </section>
     </main>
     <?php require_once '../components/footer.php' ?>

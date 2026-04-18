@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,42 +9,59 @@
     <link rel="stylesheet" href="../public/css/index.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/services.css">
-    <link rel="stylesheet" href="../public/css/map.css">
+    <link rel="stylesheet" href="../public/css/how-we-work.css">
     <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/cookies.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
-    <title>ElectroEmisiones</title>
+    <!-- <title>ElectroEmisiones</title> -->
+    <title>ElectroEmisiones | Taller Automotriz Multimarcas en Guayaquil</title>
+
+    <meta name="description" content="Taller automotriz multimarca en Guayaquil. Especialistas en emisiones, mantenimiento y diagnóstico vehicular. Agenda tu cita en ElectroEmisiones.">
+    <meta name="keywords" content="taller automotriz Guayaquil, emisiones vehiculares, mecánica automotriz, revisión técnica, ElectroEmisiones">
+    <meta name="author" content="ElectroEmisiones">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://electroemisiones.com">
+
+    <meta name="geo.region" content="EC-G">
+    <meta name="geo.placename" content="Guayaquil">
+    <meta name="geo.position" content="-2.170998;-79.922359">
+    <meta name="ICBM" content="-2.170998, -79.922359">
 </head>
 
 <body>
     <?php require_once '../components/navbar.php' ?>
 
-    <main class="main">
-        <div class="container_img-head">
-            <img src="../public/image/image-head.png" alt="">
+    <main class="principal">
+        <h1 class="titulo-electroemisiones">ElectroEmisiones Programación Automotriz - Reparación de vehículo</h1>
+        
+        <div class="cabecera-imagen">
+            <img src="../public/image/image-head.webp" alt="Taller automotriz ElectroEmisiones" draggable="false" title="bienvenido a ElectroEmisiones">
         </div>
 
-        <h2 class="sub-title">TALLER MULTIMARCAS</h2>
-        <h2 class="sub-title_two">Marcas de autos</h2>
+        <h2 class="titulo-seccion">Taller multimarca</h2>
 
-        <div class="container-carosel">
+        <div class="carrusel-marcas">
             <?php require_once '../components/carousel.php' ?>
         </div>
 
+        <a class="enlace-agenda" href="../pages/form-appointment.php"><button class="boton-agendar">🢂 Agenda tu cita aquí 🢀</button></a>
 
-        <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+        <h2 class="titulo-servicios">¿Qué hacemos?</h2>
+        <h2 class="subtitulo-servicios">Nuestros servicios</h2>
 
-        <h2 class="sub-title-service">QUE HACEMOS</h2>
-        <h2 class="sub-title-service-two">Nuestros Servicios</h2>
+        <section class="seccion-servicios">
+            <?php require_once '../components/services.php' ?>
+        </section>
 
-        <?php require_once '../components/services.php' ?>
-
-        <?php require_once '../components/map.php' ?>
     </main>
+
     <?php require_once '../components/footer.php' ?>
+    <?php require_once '../components/cookies.php' ?>
 </body>
 
 <script src="../public/js/sidebar.js"></script>
 <script src="../public/js/carousel.js"></script>
+<script src="../public/js/cookies.js"></script>
 
 </html>

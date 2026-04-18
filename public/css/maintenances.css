@@ -1,13 +1,22 @@
+.main {
+    padding: 0 20px;
+}
+
 .section-info {
     padding: 0 10px;
 }
 
 .container-text h2 {
-    margin: 25px 0;
+    margin: 10px 0;
 }
 
 .container-info .container-text p {
-    margin: 15px 0;
+    margin: 10px 0;
+}
+
+.container-text ul li {
+    margin-left: 20px;
+    /* height: 20px; */
 }
 
 .section-info .container-info .img-prevent {
@@ -21,21 +30,21 @@
 
 .section-info .sub-title {
     text-align: center;
-    margin: 20px 0;
-}
-
-.section-map {
-    padding: 20px;
     margin-top: 40px;
 }
 
-.section-map h2 {
+/* .section-map {
+    padding: 20px;
+    margin-top: 40px;
+} */
+
+/* .section-map h2 {
     font-family: Impact;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-style: italic;
     color: #053f89;
-}
+} */
 
 @media (min-width: 1200px) {
     .main {
@@ -45,7 +54,7 @@
     }
 
     .section-info {
-        width: 60%;
+        width: 70%;
     }
 
     .container-info {
@@ -64,9 +73,12 @@
         margin-top: 10px;
     } */
 
-    .section-info .container-info .container-text,
+    .section-info .container-info .container-text {
+        width: 60%;
+    }
+
     .section-info .container-info .container-img {
-        width: 50%;
+        width: 40%;
     }
 
     .section-info .container-info .container-img {

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/maintenances.css">
     <link rel="stylesheet" href="../public/css/carousel.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
+    <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
@@ -23,7 +24,16 @@
                 <div class="container-text">
                     <h2>Mantenimiento de Tapicería</h2>
                     <p>El servicio de <strong>tapicería automotriz</strong> está enfocado en la renovación y conservación del interior del vehículo, mejorando tanto su apariencia como su confort.</p>
-                    <p>Se llevan a cabo trabajos de limpieza especializada, reparación y retapizado de asientos, paneles de puertas, techos y alfombras, empleando materiales duraderos y de alta calidad. Cada intervención se realiza con precisión y atención al detalle, garantizando acabados estéticos, funcionales y acordes a las necesidades del cliente.</p>
+                    <p>Dentro de este servicio se incluyen:</p>
+                    <ul>
+                        <li>Limpieza profunda de asientos y superficies interiores</li>
+                        <li>Reparación de desgastes, roturas y costuras</li>
+                        <li>Retapizado de asientos y paneles</li>
+                        <li>Mantenimiento de techos interiores</li>
+                        <li>Limpieza y acondicionamiento de alfombras y pisos</li>
+                        <li>Restauración de detalles interiores</li>
+                    </ul>
+                    <p>Este trabajo permite recuperar la estética del interior del vehículo y mejorar la experiencia de conducción, manteniendo los materiales en buen estado por más tiempo.</p>
                     <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
                 </div>
                 <div class="container-img">
@@ -35,10 +45,7 @@
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
         </section>
-        <section class="section-map">
-            <h2>TALLER ELECTRO EMISIONES</h2>
-            <?php require_once '../components/map.php' ?>
-        </section>
+        
     </main>
     <?php require_once '../components/footer.php' ?>
 </body>

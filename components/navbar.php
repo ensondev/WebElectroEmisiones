@@ -1,44 +1,48 @@
-<div class="container-line">
-    <img class="logo" src="../public/image/logo.png" alt="logo electroemisiones" draggable="false">
-    <div class="menu-toggle" id="menu-toggle">
+<div class="barra-superior">
+    <img class="logo-principal" src="../public/image/logo.png" alt="logo electro emisiones" draggable="false">
+    <div class="boton-menu" id="boton-menu">
         ☰
     </div>
 </div>
-<div class="container-nav">
-    <div class="container_icon container_icon-1">
-        <div class="icon">
+
+<div class="info-contacto">
+    <div class="info-item info-item--telefono">
+        <div class="info-icono">
             <i class="fa-solid fa-phone"></i>
         </div>
-        <div class="container-text">
+        <div class="info-texto">
             <h3>Atención al cliente</h3>
             <p>0982653466</p>
         </div>
     </div>
-    <div class="container_icon container_icon-2">
-        <div class="icon">
+
+    <div class="info-item info-item--ubicacion">
+        <div class="info-icono">
             <i class="fa-solid fa-location-dot"></i>
         </div>
-        <div class="container-text">
+        <div class="info-texto">
             <h3>Taller automotriz ElectroEmisiones</h3>
             <a href="https://maps.app.goo.gl/hbHiu9VvxA5oSWmj6" target="_blank">
                 11er Callejón 23B NE, Los Vergeles, Guayaquil, Ecuador
             </a>
         </div>
     </div>
-    <div class="container_icon container_icon-3">
-        <div class="icon">
+
+    <div class="info-item info-item--horario">
+        <div class="info-icono">
             <i class="fa-solid fa-calendar-days"></i>
         </div>
-        <div class="container-text">
+        <div class="info-texto">
             <h3>Horario de atención</h3>
             <p>Lun - Sab : 08:00 - 18:00</p>
         </div>
     </div>
+
 </div>
 
-<!-- SIDEBAR -->
-<div class="sidebar" id="sidebar">
-    <ul>
+<!-- MENÚ LATERAL -->
+<div class="menu-lateral" id="menu-lateral">
+    <ul class="menu-lista">
         <li><a href="../pages/index.php">Inicio</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Productos</a></li>
