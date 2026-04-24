@@ -1,94 +1,103 @@
-.main {
+/* CONTENEDOR PRINCIPAL */
+.contenedor-principal {
+    width: 100%;
     padding: 0 20px;
 }
 
-.section-info {
-    padding: 0 10px;
+.mantenimiento__titulo {
+    margin-bottom: 10px;
 }
 
-.container-text h2 {
-    margin: 10px 0;
+.mantenimiento__item {
+    margin: 5px;
 }
 
-.container-info .container-text p {
-    margin: 10px 0;
+.mantenimiento__lista {
+    padding-left: 20px;
 }
 
-.container-text ul li {
-    margin-left: 20px;
-    /* height: 20px; */
+.mantenimiento-scanner-automotriz__descripcion:nth-child(5),
+.mantenimiento-sistema-inyeccion__descripcion:nth-child(5),
+.mantenimiento-aire-acondicionado__descripcion:nth-child(5),
+.mantenimiento-electricidad-automotriz__descripcion:nth-child(5),
+.mantenimiento-alineacion-balanceo__descripcion:nth-child(5),
+.mantenimiento-pintura-automotriz__descripcion:nth-child(5),
+.mantenimiento-tapiceria__descripcion:nth-child(5),
+.mantenimiento-cambio-de-vidrios__descripcion:nth-child(5),
+.mantenimiento-compra-venta__descripcion:nth-child(6) {
+    margin-bottom: 5px;
 }
 
-.section-info .container-info .img-prevent {
+.boton-agendar {
     width: 100%;
-}
-
-/* BOTON AGENDAR CITA */
-.schedule {
-    margin-bottom: 20px;
-}
-
-.section-info .sub-title {
-    text-align: center;
-    margin-top: 40px;
-}
-
-/* .section-map {
-    padding: 20px;
-    margin-top: 40px;
-} */
-
-/* .section-map h2 {
-    font-family: Impact;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #fff;
     font-size: 20px;
-    font-style: italic;
-    color: #053f89;
-} */
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    background-color: #053f89;
+}
 
-@media (min-width: 1200px) {
-    .main {
+.boton-agendar:hover {
+    background-color: #092a57;
+}
+
+.mantenimiento__media .mantenimiento__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-marcas-seccion {
+    font-size: 15px;
+    font-weight: 100;
+    color: #cecece;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* ===================== */
+/* RESPONSIVE DESKTOP */
+/* ===================== */
+@media (min-width: 800px) {
+    .mantenimiento {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .section-info {
-        width: 70%;
-    }
-
-    .container-info {
+    .mantenimiento__contenedor {
+        /* width: 80%; */
         display: flex;
         gap: 20px;
     }
+}
 
-    .section-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+@media (min-width: 1200px) {
+    .mantenimiento__contenedor {
+        width: 80%;
     }
 
-    /* .container-text .schedule {
-        margin-top: 10px;
-    } */
-
-    .section-info .container-info .container-text {
+    .mantenimiento__texto {
         width: 60%;
     }
 
-    .section-info .container-info .container-img {
+    .mantenimiento__media {
         width: 40%;
     }
 
-    .section-info .container-info .container-img {
-        background-color: red;
-        height: 300px;
+    /* .mantenimiento__texto .mantenimiento__titulo, */
+    .mantenimiento__texto .mantenimiento__descripcion,
+    .mantenimiento__texto .mantenimiento__item {
+        font-size: 12px;
     }
 
-    .container-info .container-img .img-prevent {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .boton-agendar {
+        font-size: 12px;
+        border-radius: 0;
+        margin: 0;
     }
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../public/css/how-we-work.css">
     <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/whatsapp-modal.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
     <title>Aire Acondicionado</title>
@@ -18,36 +19,44 @@
 
 <body>
     <?php require_once '../components/navbar.php' ?>
-    <main class="main">
-        <section class="section-info">
-
-            <div class="container-info">
-                <div class="container-text">
-                    <h2>Sistema de Aire Acondicionado</h2>
-                    <p>El <strong>sistema de aire acondicionado</strong> requiere mantenimiento periódico para garantizar un funcionamiento eficiente.</p>
-                    <p>Dentro de este servicio se incluyen:</p>
-                    <ul>
-                        <li>Inspección general del sistema de aire acondicionado</li>
-                        <li>Recarga de refrigerante</li>
-                        <li>Detección y reparación de fugas</li>
-                        <li>Pruebas de presión del sistema</li>
-                        <li>Limpieza de componentes</li>
-                        <li>Revisión del compresor y demás elementos principales</li>
+    <main class="contenedor-principal">
+        <section class="mantenimiento mantenimiento-aire-acondicionado">
+            <div class="mantenimiento__contenedor mantenimiento-aire-acondicionado__contenedor">
+                <div class="mantenimiento__texto mantenimiento-aire-acondicionado__texto">
+                    <h1 class="mantenimiento__titulo mantenimiento-aire-acondicionado__titulo">Sistema de Aire Acondicionado</h1>
+                    <p class="mantenimiento__descripcion mantenimiento-aire-acondicionado__descripcion">El <strong>sistema de aire acondicionado</strong> requiere mantenimiento periódico para garantizar un funcionamiento eficiente.</p>
+                    <p class="mantenimiento__descripcion mantenimiento-aire-acondicionado__descripcion">Dentro de este servicio se incluyen:</p>
+                    <ul class="mantenimiento__lista mantenimiento-aire-acondicionado__lista">
+                        <li class="mantenimiento__item mantenimiento-aire-acondicionado__item">Inspección general del sistema de aire acondicionado</li>
+                        <li class="mantenimiento__item mantenimiento-aire-acondicionado__item">Recarga de refrigerante</li>
+                        <li class="mantenimiento__item mantenimiento-aire-acondicionado__item">Detección y reparación de fugas</li>
+                        <li class="mantenimiento__item mantenimiento-aire-acondicionado__item">Pruebas de presión del sistema</li>
+                        <li class="mantenimiento__item mantenimiento-aire-acondicionado__item">Limpieza de componentes</li>
+                        <li class="mantenimiento__item mantenimiento-aire-acondicionado__item">Revisión del compresor y demás elementos principales</li>
                     </ul>
-                    <p>En Electroemisiones realizamos el mantenimiento del aire acondicionado con equipos adecuados, asegurando un funcionamiento eficiente para que disfrutes de un ambiente cómodo al conducir.</p>
+                    <p class="mantenimiento__descripcion mantenimiento-aire-acondicionado__descripcion">En Electroemisiones realizamos el mantenimiento del aire acondicionado con equipos adecuados, asegurando un funcionamiento eficiente para que disfrutes de un ambiente cómodo al conducir.</p>
+                    <a href="../pages/form-appointment.php" class="enlace-agenda">
+                        <button class="boton-agendar">
+                            Agenda Tu Cita Aquí
+                        </button>
+                    </a>
                 </div>
-                <div class="container-img">
-                    <img class="img-prevent" src="../public/image/sistema-aire-condicionado-1.jpg" alt="">
-                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+
+                <div class="mantenimiento__media mantenimiento-aire-acondicionado__media">
+                    <img class="mantenimiento__image mantenimiento-aire-acondicionado__imagen"
+                        src="../public/image/sistema-aire-condicionado-1.jpg"
+                        alt="Mantenimiento aire condicionado"
+                        draggable="false"
+                        loading="lazy">
                 </div>
             </div>
-
-            <h2 class="sub-title">Marcas de autos</h2>
+            <h2 class="titulo-marcas-seccion">Taller multimarca</h2>
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
         </section>
     </main>
     <?php require_once '../components/footer.php' ?>
+    <?php require_once '../components/whatsapp-modal.php' ?>
 </body>
 <script src="../public/js/sidebar.js"></script>
 <script src="../public/js/carousel.js"></script>

@@ -1,5 +1,7 @@
 <div class="barra-superior">
-    <img class="logo-principal" src="../public/image/logo.png" alt="logo electro emisiones" draggable="false">
+    <a href="../pages/index.php">
+        <img class="logo-principal" src="../public/image/logo.png" alt="logo electro emisiones" loading="lazy" draggable="false">
+    </a>
     <div class="boton-menu" id="boton-menu">
         ☰
     </div>
@@ -42,10 +44,10 @@
 
 <!-- MENÚ LATERAL -->
 <div class="menu-lateral" id="menu-lateral">
+    <p>ELECTROEMISIONES</p>
     <ul class="menu-lista">
         <li><a href="../pages/index.php">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Productos</a></li>
+        <li><a href="../pages/servicios.php">Servicios</a></li>
         <li><a href="../pages/form-appointment.php">Contáctanos</a></li>
         <li><a href="../pages/about-us.php">Sobre Nosotros</a></li>
     </ul>

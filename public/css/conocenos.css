@@ -1,0 +1,84 @@
+.contenedor-linea__imagen {
+    width: 100%;
+    height: 100px;
+    background: url("https://static.vecteezy.com/system/resources/previews/002/370/744/non_2x/technology-background-with-a-mechanical-concept-vector.jpg");
+    /* background-size: cover; */
+    color: #ffffff;
+    font-family: Impact;
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-conocenos {
+    padding: 20px;
+}
+
+.sub-contenedor__conocenos {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.contenedor-imagen__conocenos img {
+    width: 100%;
+}
+
+.contenedor-text__conocenos .titulo-conocenos {
+    margin: 10px 0;
+}
+
+.titulo-marcas-seccion {
+    font-size: 15px;
+    font-weight: 100;
+    color: #cecece;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (min-width: 884px) {
+    .sub-contenedor__conocenos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenedor-imagen__conocenos,
+    .contenedor-text__conocenos {
+        width: 50%;
+    }
+
+    .contenedor-imagen__conocenos img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1200px){
+    .contenedor-principal {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor-conocenos {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-imagen__conocenos,
+    .contenedor-text__conocenos {
+        width: 50%;
+    }
+
+    .contenedor-imagen__conocenos img {
+        height: auto;
+    }
+
+    .conocenos-descripcion {
+        font-size: 12px;
+    }
+}

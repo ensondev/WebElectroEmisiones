@@ -77,6 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../public/css/how-we-work.css">
     <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/whatsapp-modal.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
     <title>Agendar Cita</title>
@@ -171,24 +172,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <button type="submit">Cotizar Servicio</button>
-
-
         </form>
 
-        <section class="section-info">
-            <h2 class="sub-title">Marcas de autos</h2>
-            <?php require_once '../components/carousel.php' ?>
-            <?php require_once '../components/how-we-work.php' ?>
-        </section>
-
+        <h2 class="titulo-marcas-seccion">Taller multimarca</h2>
+        <?php require_once '../components/carousel.php' ?>
+        <?php require_once '../components/how-we-work.php' ?>
     </main>
+
     <?php require_once '../components/footer.php' ?>
+    <?php require_once '../components/whatsapp-modal.php' ?>
+
+    <!-- Toast / Modal flotante -->
+    <div id="toast" class="toast">
+        <span id="toast-message"></span>
+    </div>
 
     <script>
+        function showToast(message, type) {
+            const toast = document.getElementById("toast");
+            const toastMessage = document.getElementById("toast-message");
+
+            toastMessage.textContent = message;
+
+            toast.classList.remove("success", "error");
+            toast.classList.add(type, "show");
+
+            // ocultar después de 3 segundos
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 3000);
+        }
+
         <?php if ($status === "ok"): ?>
-            alert("✅ Mensaje enviado correctamente");
+            showToast("Mensaje enviado correctamente", "success");
         <?php elseif ($status === "error"): ?>
-            alert("❌ Error al enviar el mensaje");
+            showToast("Error al enviar el mensaje", "error");
         <?php endif; ?>
     </script>
 </body>

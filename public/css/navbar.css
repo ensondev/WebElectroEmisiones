@@ -77,6 +77,14 @@
     left: 0;
 }
 
+.menu-lateral p {
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(40, 76, 255)
+}
+
 .menu-lista {
     list-style: none;
     padding: 0;
@@ -122,5 +130,11 @@
     .info-texto p,
     .info-texto a {
         font-size: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu-lista li {
+        font-size: 12px;
     }
 }

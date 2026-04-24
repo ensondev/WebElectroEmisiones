@@ -1,3 +1,7 @@
+<?php
+    setcookie('data', 'usuario@usuario.net', time() + 84600)
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,6 +15,7 @@
     <link rel="stylesheet" href="../public/css/services.css">
     <link rel="stylesheet" href="../public/css/how-we-work.css">
     <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/whatsapp-modal.css">
     <link rel="stylesheet" href="../public/css/cookies.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
@@ -34,29 +39,26 @@
 
     <main class="principal">
         <h1 class="titulo-electroemisiones">ElectroEmisiones Programación Automotriz - Reparación de vehículo</h1>
-        
+
         <div class="cabecera-imagen">
-            <img src="../public/image/image-head.webp" alt="Taller automotriz ElectroEmisiones" draggable="false" title="bienvenido a ElectroEmisiones">
+            <img src="../public/image/image-head.webp" alt="Taller automotriz ElectroEmisiones" draggable="false" loading="lazy" title="bienvenido a ElectroEmisiones">
         </div>
 
         <h2 class="titulo-seccion">Taller multimarca</h2>
 
-        <div class="carrusel-marcas">
-            <?php require_once '../components/carousel.php' ?>
-        </div>
+        <?php require_once '../components/carousel.php' ?>
 
-        <a class="enlace-agenda" href="../pages/form-appointment.php"><button class="boton-agendar">🢂 Agenda tu cita aquí 🢀</button></a>
+        <a class="enlace-agenda" href="../pages/form-appointment.php"><button class="boton-agendar"><i class="fa-solid fa-arrow-right"></i> Agenda tu cita aquí <i class="fa-solid fa-arrow-left"></i></button></a>
 
         <h2 class="titulo-servicios">¿Qué hacemos?</h2>
         <h2 class="subtitulo-servicios">Nuestros servicios</h2>
 
-        <section class="seccion-servicios">
-            <?php require_once '../components/services.php' ?>
-        </section>
+        <?php require_once '../components/services.php' ?>
 
     </main>
 
     <?php require_once '../components/footer.php' ?>
+    <?php require_once '../components/whatsapp-modal.php' ?>
     <?php require_once '../components/cookies.php' ?>
 </body>
 

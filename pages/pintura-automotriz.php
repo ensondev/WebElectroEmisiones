@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../public/css/how-we-work.css">
     <link rel="stylesheet" href="../public/css/map.css">
     <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/whatsapp-modal.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
     <title>Pintura Automotriz</title>
@@ -18,36 +19,45 @@
 
 <body>
     <?php require_once '../components/navbar.php' ?>
-    <main class="main">
-        <section class="section-info">
-            <div class="container-info">
-                <div class="container-text">
-                    <h2>Pintura Automotriz</h2>
-                    <p>El servicio de <strong>pintura automotriz</strong> está orientado a la restauración estética y protección de la carrocería del vehículo, devolviéndole su apariencia original y preservando su valor.</p>
-                    <p>Dentro de este servicio se incluyen:</p>
-                    <ul>
-                        <li>Preparación y lijado de superficies</li>
-                        <li>Corrección de golpes, rayones e imperfecciones</li>
-                        <li>Aplicación de primer y selladores</li>
-                        <li>Pintura en cabina con igualación de color</li>
-                        <li>Acabado y pulido final</li>
-                        <li>Acabado y pulido final</li>
-                        <li>Protección contra agentes externos y corrosión</li>
+    <main class="contenedor-principal">
+        <section class="mantenimiento mantenimiento-pintura-automotriz">
+            <div class="mantenimiento__contenedor mantenimiento-pintura-automotriz__contenedor">
+                <div class="mantenimiento__texto mantenimiento-pintura-automotriz__texto">
+                    <h1 class="mantenimiento__titulo mantenimiento-pintura-automotriz__titulo">Pintura Automotriz</h1>
+                    <p class="mantenimiento__descripcion mantenimiento-pintura-automotriz__descripcion">El servicio de <strong>pintura automotriz</strong> está orientado a la restauración estética y protección de la carrocería del vehículo, devolviéndole su apariencia original y preservando su valor.</p>
+                    <p class="mantenimiento__descripcion mantenimiento-pintura-automotriz__descripcion">Dentro de este servicio se incluyen:</p>
+                    <ul class="mantenimiento__lista mantenimiento-pintura-automotriz__lista">
+                        <li class="mantenimiento__item mantenimiento-pintura-automotriz__item">Preparación y lijado de superficies</li>
+                        <li class="mantenimiento__item mantenimiento-pintura-automotriz__item">Corrección de golpes, rayones e imperfecciones</li>
+                        <li class="mantenimiento__item mantenimiento-pintura-automotriz__item">Aplicación de primer y selladores</li>
+                        <li class="mantenimiento__item mantenimiento-pintura-automotriz__item">Pintura en cabina con igualación de color</li>
+                        <li class="mantenimiento__item mantenimiento-pintura-automotriz__item">Acabado y pulido final</li>
+                        <li class="mantenimiento__item mantenimiento-pintura-automotriz__item">Acabado y pulido final</li>
+                        <li class="mantenimiento__item mantenimiento-pintura-automotriz__item">Protección contra agentes externos y corrosión</li>
                     </ul>
-                    <p>En Electroemisiones trabajamos la pintura automotriz con atención al detalle, cuidando cada etapa del proceso para lograr un acabado limpio, uniforme y acorde a las características originales del vehículo.</p>
+                    <p class="mantenimiento__descripcion mantenimiento-pintura-automotriz__descripcion">En Electroemisiones trabajamos la pintura automotriz con atención al detalle, cuidando cada etapa del proceso para lograr un acabado limpio, uniforme y acorde a las características originales del vehículo.</p>
+                    <a href="../pages/form-appointment.php" class="enlace-agenda">
+                        <button class="boton-agendar">
+                            Agenda Tu Cita Aquí
+                        </button>
+                    </a>
                 </div>
-                <div class="container-img">
-                    <img class="img-prevent" src="../public/image/pintura-automotriz-1.jpg" alt="">
-                    <a href="../pages/form-appointment.php"><button class="schedule">Agenda Tu Cita Aquí</button></a>
+
+                <div class="mantenimiento__media mantenimiento-pintura-automotriz__media">
+                    <img class="mantenimiento__image mantenimiento-pintura-automotriz__imagen"
+                        src="../public/image/pintura-automotriz-1.jpg"
+                        alt="Mantenimiento Pintura Automotriz"
+                        draggable="false"
+                        loading="lazy">
                 </div>
             </div>
-
-            <h2 class="sub-title">Marcas de autos</h2>
+            <h2 class="titulo-marcas-seccion">Taller multimarca</h2>
             <?php require_once '../components/carousel.php' ?>
             <?php require_once '../components/how-we-work.php' ?>
         </section>
     </main>
     <?php require_once '../components/footer.php' ?>
+    <?php require_once '../components/whatsapp-modal.php' ?>
 </body>
 <script src="../public/js/sidebar.js"></script>
 <script src="../public/js/carousel.js"></script>

@@ -10,9 +10,9 @@
 
             <div class="pie-redes">
                 <p>Síguenos en:</p>
-                <a href="#"><i class="fa-brands fa-square-facebook"></i>ElectroEmisiones</a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i>TallerElectroEmisiones</a>
-                <a href="#"><i class="fa-brands fa-instagram"></i>ElectroEmisiones</a>
+                <a href="https://youtube.com"><i class="fa-brands fa-square-facebook"></i>ElectroEmisiones</a>
+                <a href="https://facebook.com"><i class="fa-brands fa-tiktok"></i>TallerElectroEmisiones</a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i>ElectroEmisiones</a>
             </div>
         </div>
 
