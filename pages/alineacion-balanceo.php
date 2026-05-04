@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/global-styles.css">
-    <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="../public/css/maintenances.css">
-    <link rel="stylesheet" href="../public/css/carousel.css">
-    <link rel="stylesheet" href="../public/css/how-we-work.css">
-    <link rel="stylesheet" href="../public/css/map.css">
-    <link rel="stylesheet" href="../public/css/footer.css">
-    <link rel="stylesheet" href="../public/css/whatsapp-modal.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/global-styles.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/navbar.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/maintenances.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/carousel.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/how-we-work.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/map.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/footer.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/whatsapp-modal.css">
     <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
     <title>Alineación y Balanceo</title>
 </head>
 
 <body>
-    <?php require_once '../components/navbar.php' ?>
+    <?php require_once __DIR__ . '/../components/navbar.php' ?>
     <main class="contenedor-principal">
         <section class="mantenimiento mantenimiento-alineacion-balanceo">
             <div class="mantenimiento__contenedor mantenimiento-alineacion-balanceo__contenedor">
@@ -34,7 +34,7 @@
                         <li class="mantenimiento__item mantenimiento-alineacion-balanceo__item">Revisión del estado general de los neumáticos</li>
                     </ul>
                     <p class="mantenimiento__descripcion mantenimiento-alineacion-balanceo__descripcion">Este trabajo permite mejorar la maniobrabilidad del vehículo, reducir vibraciones al conducir y evitar el desgaste irregular de las llantas, lo que se traduce en una conducción más suave y segura.</p>
-                    <a href="../pages/form-appointment.php" class="enlace-agenda">
+                    <a href="<?= BASE_URL ?>/contactanos" class="enlace-agenda">
                         <button class="boton-agendar">
                             Agenda Tu Cita Aquí
                         </button>
@@ -42,23 +42,23 @@
                 </div>
 
                 <div class="mantenimiento__media mantenimiento-alineacion-balanceo__media">
-                    <img class="mantenimiento__image mantenimiento-alineacion-balanceo__imagen" 
-                    src="../public/image/alineacion-balanceo-1.jpg" 
-                    alt="Mantenimiento Alineación y Balanceo"
-                    draggable="false"
-                    loading="lazy">
+                    <img class="mantenimiento__image mantenimiento-alineacion-balanceo__imagen"
+                        src="<?= BASE_URL ?>/public/image/otros/alineacion-balanceo-1.jpg"
+                        alt="Mantenimiento Alineación y Balanceo"
+                        draggable="false"
+                        loading="lazy">
                 </div>
             </div>
             <h2 class="titulo-marcas-seccion">Taller multimarca</h2>
-            <?php require_once '../components/carousel.php' ?>
-            <?php require_once '../components/how-we-work.php' ?>
+            <?php require_once __DIR__ . '/../components/carousel.php' ?>
+            <?php require_once __DIR__ . '/../components/how-we-work.php' ?>
         </section>
 
     </main>
-    <?php require_once '../components/footer.php' ?>
-    <?php require_once '../components/whatsapp-modal.php' ?>
+    <?php require_once __DIR__ . '/../components/footer.php' ?>
+    <?php require_once __DIR__ . '/../components/whatsapp-modal.php' ?>
 </body>
-<script src="../public/js/sidebar.js"></script>
-<script src="../public/js/carousel.js"></script>
+<script src="<?= BASE_URL ?>/public/js/sidebar.js"></script>
+<script src="<?= BASE_URL ?>/public/js/carousel.js"></script>
 
 </html>

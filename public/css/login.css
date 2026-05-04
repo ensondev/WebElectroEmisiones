@@ -1,0 +1,43 @@
+.contenedor-logo .logo{
+    width: 200px;
+}
+
+.contenedor-titulo__sesion .titulo-formulario{
+    color: #053f89;
+}
+
+.section-contenedor__form {
+    padding: 20px;
+}
+
+.section-contenedor__form .form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login input {
+    padding: 10px 12px;
+    margin-bottom: 20px;
+}
+
+.form-login .boton-enviar {
+    padding: 12px 12px;
+    background-color: #053f89;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 700px){
+    .section-contenedor__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-titulo__sesion,
+    .form-login {
+        width: 400px;
+    }
+}

@@ -1,105 +1,41 @@
-<?php
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require '../vendor/autoload.php';
-
-$status = ""; // variable para controlar alertas
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = htmlspecialchars($_POST['nombre']);
-    $telefono = htmlspecialchars($_POST['telefono']);
-    $correo = filter_var($_POST['correo'], FILTER_SANITIZE_EMAIL);
-    $marca = htmlspecialchars($_POST['marca']);
-    $modelo = htmlspecialchars($_POST['modelo']);
-    $anio = htmlspecialchars($_POST['anio']);
-    $patente = htmlspecialchars($_POST['patente']);
-    $kilometraje = htmlspecialchars($_POST['kilometraje']);
-    $placa = htmlspecialchars($_POST['placa']);
-    $servicio = htmlspecialchars($_POST['servicio']);
-    $combustible = htmlspecialchars($_POST['combustible']);
-    $mensaje = htmlspecialchars($_POST['mensaje']);
-
-    $mail = new PHPMailer(true);
-    try {
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'nvelez4967@utm.edu.ec';
-        $mail->Password = 'erjcqwiqlegdwuos';
-        $mail->SMTPSecure = 'ssl';
-        $mail->Port = 465;
-
-        $mail->setFrom('nvelez4967@utm.edu.ec', 'ElectroEmisiones');
-        $mail->addReplyTo($correo, $nombre);
-        $mail->addAddress('nvelez4967@utm.edu.ec');
-
-        $mail->isHTML(true);
-        $mail->Subject = 'Nueva cotización - ElectroEmisiones';
-        $mail->Body = "
-            <h2>🔧 Nueva solicitud de cotización</h2>
-            <p><strong>Nombre:</strong> $nombre</p>
-            <p><strong>Teléfono:</strong> $telefono</p>
-            <p><strong>Correo:</strong> $correo</p>
-            <hr>
-            <p><strong>Marca:</strong> $marca</p>
-            <p><strong>Modelo:</strong> $modelo</p>
-            <p><strong>Año:</strong> $anio</p>
-            <p><strong>Patente:</strong> $patente</p>
-            <p><strong>Placa:</strong> $placa</p>
-            <p><strong>Kilometraje:</strong> $kilometraje</p>
-            <p><strong>Combustible:</strong> $combustible</p>
-            <hr>
-            <p><strong>Servicio:</strong> $servicio</p>
-            <p><strong>Mensaje:</strong><br>$mensaje</p>
-        ";
-
-        $mail->send();
-        $status = "ok"; // ✅ enviado correctamente
-    } catch (Exception $e) {
-        $status = "error"; // ❌ error al enviar
-    }
-}
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/global-styles.css">
-    <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="../public/css/maintenances.css">
-    <link rel="stylesheet" href="../public/css/form-appoiment.css">
-    <link rel="stylesheet" href="../public/css/carousel.css">
-    <link rel="stylesheet" href="../public/css/how-we-work.css">
-    <link rel="stylesheet" href="../public/css/map.css">
-    <link rel="stylesheet" href="../public/css/footer.css">
-    <link rel="stylesheet" href="../public/css/whatsapp-modal.css">
-    <link rel="shortcut icon" href="../public/image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/global-styles.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/navbar.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/maintenances.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/form-appoiment.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/carousel.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/how-we-work.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/map.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/footer.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/public/css/whatsapp-modal.css">
+    <link rel="shortcut icon" href="<?= BASE_URL ?>/public/image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/03b5683281.js" crossorigin="anonymous"></script>
     <title>Agendar Cita</title>
 </head>
 
 <body>
-    <?php require_once '../components/navbar.php' ?>
+    <?php require_once __DIR__ . '/../components/navbar.php' ?>
     <div class="container-img_contact">
         <h2>CONTACTANOS</h2>
     </div>
     <main class="main">
-        <form class="form-appoiment" action="" method="POST" novalidate>
+        <form class="form-appoiment" id="form-appoiment" onsubmit="cita(event)">
 
             <div class="group-container-1">
                 <div class="group-text">
                     <h2>Cotiza con nuestros asesores</h2>
                     <p>Si quieres cotizar y agendar directamente con un asesor, llena el siguiente formulario.</p>
+                    <p id="message" class="mensaje"></p>
                 </div>
                 <div class="group-client">
                     <div class="form-group">
                         <label>Nombre completo*</label>
-                        <input type="text" name="nombre" placeholder="Ej: Juan Pérez" required minlength="3" maxlength="60">
+                        <input type="text" name="nombre_cliente" placeholder="Ej: Juan Pérez" required minlength="3" maxlength="60">
                     </div>
                     <div class="form-group">
                         <label>Teléfono*</label>
@@ -122,28 +58,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label>Modelo del vehículo*</label>
                         <input type="text" name="modelo" placeholder="Ej: Corolla" required minlength="2">
                     </div>
-                    <div class="form-group">
-                        <label>Año del vehículo*</label>
-                        <input type="number" name="anio" placeholder="Ej: 2020" required min="1980" max="2026">
-                    </div>
                 </div>
                 <div class="group-vehicle-2">
                     <div class="form-group">
-                        <label>Patente del vehículo*</label>
-                        <input type="text" name="patente" placeholder="Ej: ABC1234" required minlength="5">
-                    </div>
-                    <div class="form-group">
-                        <label>Kilometraje*</label>
-                        <input type="number" name="kilometraje" placeholder="Ej: 50000" required min="0">
+                        <label>Año del vehículo*</label>
+                        <input type="number" name="anio" placeholder="Ej: 2020" required min="1980" max="2026">
                     </div>
                     <div class="form-group">
                         <label>Placa*</label>
                         <input type="text" name="placa" placeholder="Ej: GYE-1234" required minlength="5">
                     </div>
+                    <div class="form-group">
+                        <label>Kilometraje*</label>
+                        <input type="number" name="kilometraje" placeholder="Ej: 50000" required min="0">
+                    </div>
                 </div>
             </div>
 
             <div class="group-container-others">
+                <div class="form-group">
+                    <label>Combustible*</label>
+                    <select name="combustible" required>
+                        <option value="">Selecciona combustible</option>
+                        <option value="Gasolina">Gasolina</option>
+                        <option value="Diésel">Diésel</option>
+                        <option value="Hibrido">Hibrido</option>
+                    </select>
+                </div>
                 <div class="form-group">
                     <label>Servicio*</label>
                     <select name="servicio" required>
@@ -156,14 +97,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <option value="Electricidad Automotriz">Electricidad Automotriz</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>Combustible*</label>
-                    <select name="combustible" required>
-                        <option value="">Selecciona combustible</option>
-                        <option value="Gasolina">Gasolina</option>
-                        <option value="Diésel">Diésel</option>
-                    </select>
-                </div>
             </div>
 
             <div class="form-group">
@@ -171,46 +104,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <textarea name="mensaje" placeholder="Describe tu problema o solicitud..." required minlength="10"></textarea>
             </div>
 
-            <button type="submit">Cotizar Servicio</button>
+            <button class="boton-enviar" type="submit">Cotizar Servicio</button>
         </form>
 
         <h2 class="titulo-marcas-seccion">Taller multimarca</h2>
-        <?php require_once '../components/carousel.php' ?>
-        <?php require_once '../components/how-we-work.php' ?>
+        <?php require_once __DIR__ . '/../components/carousel.php' ?>
+        <?php require_once __DIR__ . '/../components/how-we-work.php' ?>
     </main>
 
-    <?php require_once '../components/footer.php' ?>
-    <?php require_once '../components/whatsapp-modal.php' ?>
+    <?php require_once __DIR__ . '/../components/footer.php' ?>
+    <?php require_once __DIR__ . '/../components/whatsapp-modal.php' ?>
 
     <!-- Toast / Modal flotante -->
     <div id="toast" class="toast">
         <span id="toast-message"></span>
     </div>
-
-    <script>
-        function showToast(message, type) {
-            const toast = document.getElementById("toast");
-            const toastMessage = document.getElementById("toast-message");
-
-            toastMessage.textContent = message;
-
-            toast.classList.remove("success", "error");
-            toast.classList.add(type, "show");
-
-            // ocultar después de 3 segundos
-            setTimeout(() => {
-                toast.classList.remove("show");
-            }, 3000);
-        }
-
-        <?php if ($status === "ok"): ?>
-            showToast("Mensaje enviado correctamente", "success");
-        <?php elseif ($status === "error"): ?>
-            showToast("Error al enviar el mensaje", "error");
-        <?php endif; ?>
-    </script>
+    <script src="<?= BASE_URL ?>/public/js/sidebar.js"></script>
+    <script src="<?= BASE_URL ?>/public/js/carousel.js"></script>
+    <script src="<?= BASE_URL ?>/public/js/formulario.js"></script>
 </body>
-<script src="../public/js/sidebar.js"></script>
-<script src="../public/js/carousel.js"></script>
 
 </html>

@@ -1,6 +1,6 @@
 <div class="barra-superior">
-    <a href="../pages/index.php">
-        <img class="logo-principal" src="../public/image/logo.png" alt="logo electro emisiones" loading="lazy" draggable="false">
+    <a href="<?= BASE_URL ?>/">
+        <img class="logo-principal" src="<?= BASE_URL ?>/public/image/logo.png" alt="logo electro emisiones" loading="lazy" draggable="false">
     </a>
     <div class="boton-menu" id="boton-menu">
         ☰
@@ -14,7 +14,7 @@
         </div>
         <div class="info-texto">
             <h3>Atención al cliente</h3>
-            <p>0982653466</p>
+            <p>0900000000</p>
         </div>
     </div>
 
@@ -46,9 +46,10 @@
 <div class="menu-lateral" id="menu-lateral">
     <p>ELECTROEMISIONES</p>
     <ul class="menu-lista">
-        <li><a href="../pages/index.php">Inicio</a></li>
-        <li><a href="../pages/servicios.php">Servicios</a></li>
-        <li><a href="../pages/form-appointment.php">Contáctanos</a></li>
-        <li><a href="../pages/about-us.php">Sobre Nosotros</a></li>
+        <li><a href="<?= BASE_URL ?>/">Inicio</a></li>
+        <li><a href="<?= BASE_URL ?>/servicios">Servicios</a></li>
+        <li><a href="<?= BASE_URL ?>/historial">Evidencias</a></li>
+        <li><a href="<?= BASE_URL ?>/contactanos">Contáctanos</a></li>
+        <li><a href="<?= BASE_URL ?>/conocenos">Sobre Nosotros</a></li>
     </ul>
 </div>

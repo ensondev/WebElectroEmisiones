@@ -5,14 +5,14 @@
         <div class="pie-columna pie-columna-contacto">
             <div class="pie-llamada">
                 <h2>☰ Programación y reparaciones ☰</h2>
-                <p>Llama ahora: 0982653466</p>
+                <p>Llama ahora: 0900000000</p>
             </div>
 
             <div class="pie-redes">
                 <p>Síguenos en:</p>
-                <a href="https://youtube.com"><i class="fa-brands fa-square-facebook"></i>ElectroEmisiones</a>
-                <a href="https://facebook.com"><i class="fa-brands fa-tiktok"></i>TallerElectroEmisiones</a>
-                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i>ElectroEmisiones</a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i>TallerElectroEmisiones</a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i>TallerElectroEmisiones</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>TallerElectroEmisiones</a>
             </div>
         </div>
 

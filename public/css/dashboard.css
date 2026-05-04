@@ -1,0 +1,269 @@
+.contenedor-logo {
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-logo .logo {
+    width: 200px;
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 20px;
+}
+
+.contenedor-botones .crear-usuario_boton {
+    background-color: #053f89;
+    padding: 7px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.contenedor-botones .crear-usuario_boton:hover {
+    background-color: #062751;
+}
+
+.crear-usuario_boton a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contenedor-botones .logout {
+    background-color: red;
+    color: #fff;
+    padding: 7px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.contenedor-botones .logout:hover {
+    background-color: #8f1e11;
+}
+
+.contenedor-sections {
+    width: 100dvw;
+    height: calc(100dvh - 80px);
+    display: flex;
+}
+
+.contenedor-section__citas,
+.contenedor-section__servicios {
+    height: 100%;
+    border: 0.3px solid #cacaca;
+    /* background-color: #f4f4f4; */
+}
+
+.contenedor-section__citas {
+    width: 70%;
+}
+
+.contenedor-section__servicios {
+    width: 30%;
+}
+
+.sub-titulo__citas {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* ESTILO PARA LA TABLA DONDE SE VAN A MOSTRAR LAS CITAS */
+.tabla-scroll {
+    height: calc(100% - 40px);
+    /* ajusta según tu título */
+    overflow-y: auto;
+}
+
+.tabla-citas {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    color: #333;
+    /* negro suave */
+    background-color: #fff;
+}
+
+.tabla-citas thead {
+    background-color: #fff;
+}
+
+.tabla-citas th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 8px 10px;
+    font-weight: 600;
+    font-size: 10px;
+    color: #555;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.tabla-citas td {
+    padding: 6px 10px;
+    /* filas más pequeñas */
+    border-bottom: 1px solid #eee;
+    color: #444;
+    font-size: 10px;
+    text-align: center;
+}
+
+.tabla-citas tbody tr:hover {
+    background-color: #fafafa;
+}
+
+/* MENSAJE */
+.mensaje {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* ESTILO PARA LOS BOTONES DE ACEPTAR, RECHAZAR Y ELIMINAR */
+.acciones {
+    display: flex;
+    gap: 6px;
+}
+
+.acciones button {
+    border: none;
+    padding: 5px 7px;
+    cursor: pointer;
+    font-size: 8px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.btn-aceptar {
+    background: #e6f7ee;
+    color: #1e7e34;
+}
+
+.btn-rechazar {
+    background: #fff3e0;
+    color: #e67e22;
+}
+
+.btn-eliminar {
+    background: #fdecea;
+    color: #c0392b;
+}
+
+.btn-aceptar:hover {
+    background: #1e7e34;
+    color: #fff;
+}
+
+.btn-rechazar:hover {
+    background: #e67e22;
+    color: #fff;
+}
+
+.btn-eliminar:hover {
+    background: #c0392b;
+    color: #fff;
+}
+
+.estado-pendiente {
+    background-color: #f9f9f9;
+}
+
+.estado-aceptada {
+    background-color: #e9f9ee;
+    /* verde claro */
+}
+
+.estado-rechazada {
+    background-color: #fdeaea;
+    /* rojo claro */
+}
+
+.tabla-citas tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+/* ESTILO PARA EL FORMULARIO DE HISTORIAL DE SERVICIOS */
+.contenedor-section__servicios {
+    /* background-color: red; */
+    padding: 10px;
+}
+
+.form-servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-servicios .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-servicios .form-group {
+    font-size: 12px;
+    width: 100%;
+}
+
+.form-group input,
+.form-group select {
+    padding: 5px;
+}
+
+.form-group input::placeholder {
+    font-size: 12px;
+}
+
+.form-servicios .form-img__group {
+    display: flex;
+    align-items: center;
+}
+
+.form-img__group .form-group,
+.form-img__group .preview-container {
+    width: 50%;
+}
+
+.form-img__group .preview-container {
+    display: flex;
+    justify-content: center;
+    /* background-color: #e9f9ee; */
+    border: 1px solid #c2c2c2;
+    width: 100%;
+    height: 100px;
+}
+
+.preview-container img {
+    height: 100%;
+}
+
+.form-contenedor__group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-servicios .form-group textarea {
+    height: 80px;
+    resize: none;
+}
+
+.form-servicios .boton-enviar {
+    padding: 10px;
+    background-color: #053f89;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.form-servicios .boton-enviar:hover {
+    background-color: #062751;
+}

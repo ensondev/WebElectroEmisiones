@@ -1,0 +1,4 @@
+# Bloquea el acceso directo a controllers, models y middlewares
+# Todo debe entrar únicamente por /public/index.php
+
+Require all denied
